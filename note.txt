@@ -1,0 +1,14 @@
+! error
+django.db.migrations.exceptions.InconsistentMigrationHistory: Migration admin.0001_initial is applied before its dependency accounts.0001_initial on database 'default'.
+https://stackoverflow.com/questions/44651760/django-db-migrations-exceptions-inconsistentmigrationhistory
+
+1. register ke admin biar muncul di django admin
+2. bikin forms.py
+1.5 create superuser buat check tabel di django admin
+3. atur signup di views.py
+4. atur url signup di urls.py di accounts
+
+admin accounts
+aditra79@gmail.com
+Admin
+adminpanel02
