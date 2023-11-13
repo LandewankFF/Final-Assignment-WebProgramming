@@ -2,10 +2,21 @@
 django.db.migrations.exceptions.InconsistentMigrationHistory: Migration admin.0001_initial is applied before its dependency accounts.0001_initial on database 'default'.
 https://stackoverflow.com/questions/44651760/django-db-migrations-exceptions-inconsistentmigrationhistory
 
-3. atur signup di views.py
-4. atur url signup di urls.py di accounts
 
 admin accounts
 aditra79@gmail.com
 Admin
 adminpanel02
+
+EMAIL_USER = 'azaleapansy04@gmail.com'
+EMAIL_PASSWORD = 'sdrxcxrdwekmfgyb'
+
+1. buat reset password page dari awal sampe akhir
+2. secure confidential information using dot env library
+3. tell all features
+    signup
+    login
+    reset password
+    login
+    logout
+4. commit and merge
