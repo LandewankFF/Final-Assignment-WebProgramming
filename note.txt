@@ -30,4 +30,4 @@ add httpOnly cookie security in settings.py
 
 changing jinja form structure in login and signup
 
-relocating reset password templateq
+relocating reset password template
