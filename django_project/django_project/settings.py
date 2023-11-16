@@ -139,3 +139,10 @@ EMAIL_USE_TLS = True # transport layer security
 EMAIL_PORT = 587
 EMAIL_HOST_USER = str(os.getenv('EMAIL_HOST_USER'))
 EMAIL_HOST_PASSWORD = str(os.getenv('EMAIL_HOST_PASSWORD'))
+
+# The number of seconds a password reset link is valid for.
+PASSWORD_RESET_TIMEOUT = 600
+
+SESSION_COOKIE_SECURE = True
+CSRF_COOKIE_HTTPONLY = True
+SESSION_COOKIE_HTTPONLY = True
