@@ -20,3 +20,14 @@ EMAIL_PASSWORD = 'sdrxcxrdwekmfgyb'
     login
     logout
 4. commit and merge
+
+setting password reset timeout for the reset password link
+
+add redirecting feature into login and signup view.
+    it redirecting the authenticated user to the home page.
+
+add httpOnly cookie security in settings.py
+
+changing jinja form structure in login and signup
+
+relocating reset password templateq
