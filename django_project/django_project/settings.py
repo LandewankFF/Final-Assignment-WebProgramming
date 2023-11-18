@@ -52,6 +52,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
 ]
 
 ROOT_URLCONF = 'django_project.urls'
@@ -122,7 +123,15 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
+# membuat directory static_collection sebagai penyimpanan hasil collectstatic dari app
+STATIC_ROOT = BASE_DIR / 'static_collection'
+
 STATIC_URL = 'static/'
+
+# semua directory staticfiles tambahan
+STATICFILES_DIRS = [
+    BASE_DIR / 'global_static'
+]
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
