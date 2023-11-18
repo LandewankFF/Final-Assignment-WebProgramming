@@ -1,2 +1,11 @@
+# Virtual environtment
 django_project/.venv
+
+# notes during the project
 /note.txt
+
+# cache in apps or project
+__pycache__/
+
+# default database
+db.sqlite3
