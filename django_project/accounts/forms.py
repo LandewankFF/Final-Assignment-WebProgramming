@@ -1,12 +1,26 @@
 from django.contrib.auth.forms import UserCreationForm, UserChangeForm
 from .models import CustomUser
 from django import forms
+import re
 
 class CustomUserCreationForm(UserCreationForm):
     
     class Meta:
         model = CustomUser
         fields = ('full_name', 'email')
+
+    def clean(self):
+        cleaned_data = super().clean()
+        full_name = cleaned_data.get('full_name')
+
+        if full_name and not re.match(r"^[a-zA-Z ]+$", full_name):
+            self.add_error(
+                'full_name', 'Full name contains spaces and alphabets only')
+
+        elif full_name and len(full_name) < 12:
+            self.add_error(
+                'full_name', 'Full name should be at least 12 characters long')
+            
 
 class CustomUserChangeForm(UserChangeForm):
     

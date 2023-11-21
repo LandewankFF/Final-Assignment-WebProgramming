@@ -42,12 +42,21 @@
                 <form action="" method="post">
                     {% csrf_token %}
                     <div class="input-field">
-                        <label>{{ form.username.label }}</label>
-                        {{ form.username }}
+                        <label>Email</label>
+                        <input type="email" name="email" required>
                     </div>
                     <div class="input-field">
-                        <label>{{ form.password.label }}</label>
-                        {{ form.password }}
+                        <label>Password</label>
+                        <input type="password" name="password" required>
+
+                        {% if messages %}
+                            {% for message in messages %}
+                                {% if message.tags == "error" %}
+                                    <span>{{ message }}</span>
+                                {% endif %}
+                            {% endfor %}
+                        {% endif %}
+        
                         <p>Forgot Password? <a href="{% url 'reset_password' %}">Reset Password</a></p>
                     </div>
                     <button id="login" type="submit">Login</button>
@@ -72,18 +81,26 @@
                     <div class="input-field">
                         <label>{{ form.full_name.label }}</label>
                         {{ form.full_name }}
+
+                        {{ form.full_name.errors | first }}
                     </div>
                     <div class="input-field">
                         <label>{{ form.email.label }}</label>
                         {{ form.email }}
+
+                        {{ form.email.errors | first }}
                     </div>
                     <div class="input-field">
                         <label>{{ form.password1.label }}</label>
                         {{ form.password1 }}
+
+                        {{ form.password1.errors | first }}
                     </div>
                     <div class="input-field">
                         <label>{{ form.password2.label }}</label>
                         {{ form.password2 }}
+
+                        {{ form.password2.errors | first }}
                     </div>
                     <div class="policy-text">
                         <input type="checkbox" id="policy" required>
