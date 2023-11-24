@@ -50,12 +50,12 @@
                         <input type="password" name="password" required>
 
                         {% if messages %}
-                            {% for message in messages %}
-                                {% if message.tags == "error" %}
-                                    <span>{{ message }}</span>
-                                {% endif %}
-                            {% endfor %}
-                        {% endif %}
+                                {% for message in messages %}
+                                    {% if message.tags == "error" %}
+                                        <span class="error-message">{{ message }}</span>
+                                    {% endif %}
+                                {% endfor %}
+                            {% endif %}
         
                         <p>Forgot Password? <a href="{% url 'reset_password' %}">Reset Password</a></p>
                     </div>
@@ -82,25 +82,25 @@
                         <label>{{ form.full_name.label }}</label>
                         {{ form.full_name }}
 
-                        {{ form.full_name.errors | first }}
+                        <span class="error-message">{{ form.full_name.errors | first }}</span>
                     </div>
                     <div class="input-field">
                         <label>{{ form.email.label }}</label>
                         {{ form.email }}
 
-                        {{ form.email.errors | first }}
+                        <span class="error-message">{{ form.email.errors | first }}</span>
                     </div>
                     <div class="input-field">
                         <label>{{ form.password1.label }}</label>
                         {{ form.password1 }}
 
-                        {{ form.password1.errors | first }}
+                        <span class="error-message">{{ form.password1.errors | first }}</span>
                     </div>
                     <div class="input-field">
                         <label>{{ form.password2.label }}</label>
                         {{ form.password2 }}
 
-                        {{ form.password2.errors | first }}
+                        <span class="error-message">{{ form.password2.errors | first }}</span>
                     </div>
                     <div class="policy-text">
                         <input type="checkbox" id="policy" required>

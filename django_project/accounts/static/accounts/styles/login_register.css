@@ -150,7 +150,11 @@ header {
     object-fit: cover;
 }
 
-
+.error-message {
+    display: flex;
+    color: rgb(163, 35, 35);
+    font-size: 14px;
+}
 
 
 /* End styling section login */
