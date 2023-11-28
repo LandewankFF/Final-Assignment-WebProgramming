@@ -1,3 +1,10 @@
+:root {
+    --error-color: #dc3545;
+    --success-color: #28a745;
+    --warning-color: #ffc107;
+}
+
+
 * {
     margin: 0;
     padding: 0;
@@ -78,12 +85,25 @@ header {
     /* height: 448px ; */
 }
 
+.login-container form .input-field.error input {
+    border-color: var(--error-color);
+}
+
+.login-container form .input-field.success input {
+    border-color: var(--success-color);
+}
+
+
+.input-field small {
+    color: var(--error-color);
+}
+
 .login-container form .input-field input {
     display: block;
     width: 100%;
     padding-block: 5px;
     padding-left: 10px;
-    border: none;
+    border-color: #fff;
     border-radius: 5px;
     margin-top: 5px;
     /* background: none; */
@@ -163,6 +183,7 @@ header {
 .policy-text label {
     font-size: 12px;
 }
+
 
 /*  styling section sign up*/
 

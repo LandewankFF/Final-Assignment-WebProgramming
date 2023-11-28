@@ -42,12 +42,12 @@
                 <form action="" method="post">
                     {% csrf_token %}
                     <div class="input-field">
-                        <label>Email</label>
-                        <input type="email" name="email" required>
+                        <label for="id_email">Email</label>
+                        <input type="email" name="email" required id="id_email">
                     </div>
                     <div class="input-field">
-                        <label>Password</label>
-                        <input type="password" name="password" required>
+                        <label for="id_password">Password</label>
+                        <input type="password" name="password" required id="id_password">
 
                         {% if messages %}
                                 {% for message in messages %}
@@ -76,29 +76,33 @@
         <h1>Sign Up</h1>
         <div class="login-container">
             <div class="login-box">
-                <form action="" method="post">
+                <form action="" method="post" id="signup-form" class="form">
                     {% csrf_token %}
                     <div class="input-field">
-                        <label>{{ form.full_name.label }}</label>
+                        <label for="id_full_name">{{ form.full_name.label }}</label>
                         {{ form.full_name }}
+                        <small></small>
 
                         <span class="error-message">{{ form.full_name.errors | first }}</span>
                     </div>
                     <div class="input-field">
-                        <label>{{ form.email.label }}</label>
+                        <label for="id_email">{{ form.email.label }}</label>
                         {{ form.email }}
+                        <small></small>
 
                         <span class="error-message">{{ form.email.errors | first }}</span>
                     </div>
                     <div class="input-field">
-                        <label>{{ form.password1.label }}</label>
+                        <label for="id_password1">{{ form.password1.label }}</label>
                         {{ form.password1 }}
+                        <small></small>
 
                         <span class="error-message">{{ form.password1.errors | first }}</span>
                     </div>
                     <div class="input-field">
-                        <label>{{ form.password2.label }}</label>
+                        <label for="id_password2">{{ form.password2.label }}</label>
                         {{ form.password2 }}
+                        <small></small>
 
                         <span class="error-message">{{ form.password2.errors | first }}</span>
                     </div>
