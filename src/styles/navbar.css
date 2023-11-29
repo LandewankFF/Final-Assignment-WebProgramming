@@ -87,7 +87,7 @@ body {
     
 }
 
-.icon {
+.icon-search {
     position: absolute;
     left: 10px;
     /* Adjust icon position */
@@ -95,7 +95,7 @@ body {
     /* Adjust icon position */
     transform: translateY(-50%);
     /* To keep the icon centered vertically */
-    color: #888;
+    color: var(--secondary);
 }
 
 .input-text {
@@ -123,16 +123,16 @@ body {
 /* End Styling header */
 
 /* styling navigation bar */
-.disable-laptop {
+.disable-login {
     display: none;
 }
 .wrapp-nav  {
     display: flex;
     justify-content: space-between;
-    background: #9b6565;
+    border-bottom: 1px solid black;
+    /* background: #eb8181; */
 }
 .navigation {
-    position: relative;
     display: flex;
     gap: 15px;
     /* background: var(--primary); */

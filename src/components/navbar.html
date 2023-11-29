@@ -29,10 +29,10 @@
                 <img src="/asset/1.png" alt="logo">
                 <h4>Medika Nusantara</h4>
             </div>
-            <div class="search">
+            <div class="search" id="search-nav">
                 <form>
                     <div class="input-container">
-                        <i class="icon fas fa-search"></i>
+                        <i class="icon-search fas fa-search"></i>
                         <input type="text" class="input-text" placeholder="Cari Dokter, Layanan, atau Informasi">
                         <button id="search">Search</button>
                     </div>
@@ -54,16 +54,16 @@
 
      <!--structure navigation bar -->
     <nav class="wrapp-nav container">
-        <div class="hamburger">
-            <i class="fa-solid fa-bars" id="hamburgericon" style="color: #F0E7E7;"></i>
+        <div class="hamburger" id="hamburger-menu">
+            <i class="fa-solid fa-bars" id="hamburgericon" style="color: #0F172A;"></i>
         </div>
-        <ul class="navigation">
+        <ul class="navigation hidden" id="menu-list">
             <li><a href="#" class="active">Porch</a></li>
             <li><a href="#">Appointments</a></li>
             <li><a href="#">Specialties</a></li>
             <li><a href="#">Service</a></li>
             <li><a href="#">Information</a></li>
-            <li class="disable-laptop"><a href="#">Login/Register</a></li>
+            <li class="disable-login"><a class="color-login" href="#">Login/Register</a></li>
         </ul>
         <div class="login-register">
             <a href="#">Login/Register</a>
@@ -71,13 +71,7 @@
     </nav>
     <!-- End structure navigation bar  -->
 
-    <script>
-        const hamburgerIcon = document.getElementById('hamburgericon');
-        const navigation = document.querySelector('.navigation');
-        hamburgerIcon.addEventListener('click', function() {
-        navigation.classList.toggle('active');
-        });
-    </script>
+    <script src="/src/script/menu.js"></script>
 </body>
 
 </html>
