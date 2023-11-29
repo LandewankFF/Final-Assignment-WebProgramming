@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>navbar </title>
+    <!-- get icon  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- style website using CSS -->
+    <link rel="stylesheet" href="/src/styles/navbar.css">
+    <link rel="stylesheet" href="/src/styles/fotnav-res.css">
+    <!-- add font from google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300&family=Noto+Sans+JP:wght@300;400&family=Poppins:wght@200;400;600&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="/asset/1.png" />
+</head>
+
+<body>
+    <!-- header Structure -->
+    <header>
+        <div class="head container">
+            <div class="logo">
+                <img src="/asset/1.png" alt="logo">
+                <h4>Medika Nusantara</h4>
+            </div>
+            <div class="search">
+                <form>
+                    <div class="input-container">
+                        <i class="icon fas fa-search"></i>
+                        <input type="text" class="input-text" placeholder="Cari Dokter, Layanan, atau Informasi">
+                        <button id="search">Search</button>
+                    </div>
+                </form>
+            </div>
+            <div class="menu">
+                <div class="emergency-call">
+                    <i class="fa-solid fa-phone"></i>
+                    <p>Emergency Call</p>
+                </div>
+                <div class="language">
+                    <i class="fa-solid fa-globe"></i>
+                    <p>ID</p>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- End header Structure -->
+
+     <!--structure navigation bar -->
+    <nav class="wrapp-nav container">
+        <div class="hamburger">
+            <i class="fa-solid fa-bars" id="hamburgericon" style="color: #F0E7E7;"></i>
+        </div>
+        <ul class="navigation">
+            <li><a href="#" class="active">Porch</a></li>
+            <li><a href="#">Appointments</a></li>
+            <li><a href="#">Specialties</a></li>
+            <li><a href="#">Service</a></li>
+            <li><a href="#">Information</a></li>
+            <li class="disable-laptop"><a href="#">Login/Register</a></li>
+        </ul>
+        <div class="login-register">
+            <a href="#">Login/Register</a>
+        </div>
+    </nav>
+    <!-- End structure navigation bar  -->
+
+    <script>
+        const hamburgerIcon = document.getElementById('hamburgericon');
+        const navigation = document.querySelector('.navigation');
+        hamburgerIcon.addEventListener('click', function() {
+        navigation.classList.toggle('active');
+        });
+    </script>
+</body>
+
+</html>

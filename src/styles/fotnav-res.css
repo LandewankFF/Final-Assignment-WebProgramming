@@ -1,9 +1,29 @@
 @media screen and (max-width: 1024px){
+    /* navbar */
+    .container {
+        padding-inline:50px;
+        padding-block: 20px;
+    }
+    .input-container{
+         width: 360px;
+    }
+    /* footer */
     .footer-row, .copy-right{
         padding-inline: 100px;
     }
 }
 @media screen and (max-width: 768px){
+    /* navbar */
+    
+    .search{
+        display: none;
+    }
+    .hamburger {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+    }
+    /* footer */
     .footer-row, .copy-right{
         padding-inline: 80px;
     }
