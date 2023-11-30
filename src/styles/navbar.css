@@ -120,7 +120,7 @@ body {
     color: var(--textlight);
     font-weight: var(--font-weight-body);
     cursor: pointer;
-    font-size: var(--font-size-body3);
+    font-size: var(--font-size-body2);
 }
 
 /* End Styling header */
