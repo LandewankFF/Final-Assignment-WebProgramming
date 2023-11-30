@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary: #335846;
+    --secondary: #DEB887;
+    --buttton: #00BCFF;
+    --textlight: #FDFDFD;
+    --textdrak: #0F172A;
+
+    --font-weight-heading: 700;
+    --font-weight-body: 400;
+
+    --font-size-h1: 3rem;
+    --font-size-h2: 2.25rem;
+    --font-size-h3: 1.875rem;
+    --font-size-h4: 1.5rem;
+    --font-size-h5: 1.25rem;
+
+    --font-size-body1: 1.25rem;
+    --font-size-body2: 1rem;
+    --font-size-body3: 0.875rem;
+    --font-size-body4: 0.75rem;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #dfe1e2;
+}
+.hero{
+    width: 100%;
+    height: 550px;
+    background: var(--textdrak);
+}
+
+.hero-card{
+    background: var(--primary);
+}
+.wrapp{
+    width: 350px;
+    height: 400px;
+    background: var(--secondary);
+    border-radius: 5px;
+}
