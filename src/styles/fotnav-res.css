@@ -91,6 +91,9 @@
 }
 @media screen and (max-width: 425px){
     /* navbar */
+    .language p{
+        display: none;
+    }
     .container{
         padding-inline: 20px;
     }

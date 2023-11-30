@@ -45,7 +45,7 @@ body {
     align-items: center;
 }
 
-.head>.logo {
+.logo {
     display: flex;
     align-items: center;
     color: var(--textlight);
@@ -53,11 +53,6 @@ body {
 
 }
 
-.head>.logo {
-    color: var(--textlight);
-    /* display: inline-flex; */
-    font-size: var(--font-size-h4);
-}
 
 .head>.logo img {
     max-width: 50px;
