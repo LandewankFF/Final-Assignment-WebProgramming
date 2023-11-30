@@ -35,7 +35,15 @@
 }
 @media screen and (max-width: 768px){
     /* navbar */
-   
+    .input-container{
+        max-width: 400px;
+    }
+    #search{
+        padding-block: 10px;
+    }
+   #search-nav{
+        display: flex;
+   }
     
     .wrapp-nav{
         flex-wrap: wrap;
@@ -46,7 +54,7 @@
     .navigation{
         flex-direction: column;
         position: absolute;
-        top: 66px;
+        top: 87px;
         left: 0;
         /* right: 0; */
         padding-inline: 50px;
@@ -59,7 +67,7 @@
         justify-content: center;
     }
     .hidden{
-        height: 250px;
+        height: 300px;
         opacity: 1;
     }
 
@@ -85,6 +93,22 @@
     /* navbar */
     .container{
         padding-inline: 20px;
+    }
+    .login-register{
+        display: none;
+    }
+    .disable-login{
+        display: block;
+    }
+    .disable-login{
+        padding-block: 10px;
+        /* padding-inline: 10px; */
+        justify-content: center;
+        width: 150px;
+        background: var(--buttton);
+        border-radius: 5px;
+        color: var(--textlight);
+        text-align: center;
     }
     .emergency-call p{
         display: none;
@@ -114,6 +138,10 @@
 }
 
 @media screen and (max-width: 375px){
+    /* navbar */
+    .input-container{
+        max-width: 300px;
+    }
     .footer-row, .copy-right{
         padding-inline: 15px;
     }

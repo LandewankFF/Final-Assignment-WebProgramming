@@ -87,6 +87,9 @@ body {
     
 }
 
+#search-nav{
+    display: none;
+}
 .icon-search {
     position: absolute;
     left: 10px;
@@ -130,6 +133,7 @@ body {
     display: flex;
     justify-content: space-between;
     border-bottom: 1px solid black;
+    align-items: center;
     /* background: #eb8181; */
 }
 .navigation {
