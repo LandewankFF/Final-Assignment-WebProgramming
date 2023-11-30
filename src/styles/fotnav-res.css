@@ -47,7 +47,7 @@
     
     .wrapp-nav{
         flex-wrap: wrap;
-        position: absolute;
+        position: relative;
         width: 100%;
         /* background: var(--primary); */
     }
