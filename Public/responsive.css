@@ -1,0 +1,8 @@
+@media screen and (max-width: 768px){
+    .about{
+        flex-direction: column;
+    }
+    .about .container-about{
+        width: 100%;
+    }
+}
