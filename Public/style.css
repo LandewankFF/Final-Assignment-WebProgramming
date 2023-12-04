@@ -10,6 +10,7 @@
     --secondary-hover: rgb(233, 194, 142);
     --buttton: #0799ce;
     --buttton-hover: #00729b;
+    --container: #eeeaea;
     --textlight: #FDFDFD;
     --textdrak: #0F172A;
 
@@ -34,7 +35,7 @@
 }
 body {
     font-family: 'Poppins', sans-serif;
-    background: #dfe1e2;
+    background: #f1eeee;
 }
 .hero-img{
     position: static;
@@ -59,7 +60,7 @@ body {
 }
 .wrapp{
     width: 250px;
-    height: 220px;
+    height: auto;
     background: var(--secondary);
     border-radius: 5px;
     padding: 20px;
@@ -148,7 +149,7 @@ body {
 .container-about article a{
     text-decoration: none;
     color: var(--textlight);
-    /* padding-block: 5px; */
+    padding-block: 5px;
     /* padding-inline: 10px; */
     width: 120px;
     text-align: center;
@@ -159,3 +160,77 @@ body {
     transition:  background .5s;
     background: var(--buttton-hover);
 }
+
+
+/* styling section card */
+.news{
+    display: flex;
+    justify-content: space-between;
+    /* width: fit-content; */
+    gap: 10px;
+}
+.card:hover .img-container {
+    transform: scale(1.1); /* Skala gambar sedikit lebih besar saat dihover */
+    transition: transform 0.3s ease;
+}
+.card{
+    width: 300px;
+    height: auto;
+    background-color: var(--container);
+    border-radius: 10px;
+    box-shadow: -4px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    overflow: hidden;
+}
+
+.img-container img{
+    width: 100%;
+    transition: transform 0.3s ease;
+    /* border-radius: 10px 10px 0 0; */
+}
+.content{
+    padding: 10px;
+    width: 100%;
+    /* max-height: 400px;
+    height: 100%; */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.content div p{
+    text-align: justify;
+}
+.content div time{
+    padding-inline: 10px;
+    padding-block: 5px;
+    background: var(--textdrak);
+    color: var(--textlight);
+    border-radius: 5px;
+    font-size: var(--font-size-body4);
+}
+.content h3{
+    font-size: var(--font-size-body2);
+}.content .read-more{
+    display: flex;
+    justify-content: center;
+
+}
+.content div a{
+    text-align: center;
+    align-items: center;
+    width: 100%;
+    padding-block: 5px;
+    border-radius: 5px;
+    /* padding-inline: 10px; */
+    text-decoration: none;
+    color: var(--textlight);
+    background: var(--buttton);
+    transition: background .5s;
+}
+.content div a:hover{
+    background: var(--buttton-hover);
+}
+section h5{
+    font-size: var(--font-size-h5);
+    margin-bottom: 20px;
+}
+/* END styling section card */
