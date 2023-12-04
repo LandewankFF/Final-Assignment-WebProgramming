@@ -1,0 +1,191 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary: #335846;
+    --secondary: #DEB887;
+    --buttton: #00BCFF;
+    --textlight: #FDFDFD;
+    --textdrak: #0F172A;
+
+    --font-weight-heading: 700;
+    --font-weight-body: 400;
+
+    --font-size-h1: 3rem;
+    --font-size-h2: 2.25rem;
+    --font-size-h3: 1.875rem;
+    --font-size-h4: 1.5rem;
+    --font-size-h5: 1.25rem;
+
+    --font-size-body1: 1.25rem;
+    --font-size-body2: 1rem;
+    --font-size-body3: 0.875rem;
+    --font-size-body4: 0.75rem;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* styling section footer */
+footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-inline: 120px;
+    gap: 20px;
+    padding-block: 60px;
+    background-color: var(--primary);
+    margin-top: 50px;
+}
+
+/* giving color font */
+.footer-row>.footer-col {
+    color: var(--textlight);
+}
+
+/* Giving style title such as  about us, coporate, subscribe*/
+.footer-col>h4 {
+    font-size: var(--font-size-h4);
+    margin-bottom: 15px;
+}
+
+/* remove list style and giving top margin */
+.footer-col>ul>li {
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+/* remove underline on tag a and giving color font */
+.footer-col>ul>li>a {
+    color: var(--textlight);
+    text-decoration: none;
+}
+
+
+/* Styling section logo */
+.footer-row>.logo>p {
+    margin-block: 10px;
+    max-width: 300px;
+    text-align: justify;
+}
+
+.logo h3 {
+    font-size: var(--font-size-h3);
+}
+.logo-footer div{
+    width: 80px;
+    height:80px
+}
+.logo-footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footer-col>p {
+    max-width: 300px;
+    text-align: justify;
+    font-size: var(--font-size-body2);
+}
+
+.footer-col>div img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* END Styling section logo */
+
+/* Styling input text for about coporate */
+.footer-col ul li a {
+    font-size: var(--font-size-body2);
+}
+
+/* Style input email for subscribe */
+.footer-col form {
+    height: 43px;
+    border-radius: 10px;
+    background-color: var(--textlight);
+    margin-block: 15px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-col form input {
+    /* width: 211px; */
+    height: 100%;
+    border-radius: 10px 0 0 10px;
+    padding-left: 10px;
+    outline: none;
+    border: none;
+    background: none;
+    font-size: var(--font-size-body3);
+
+}
+
+/* style button subscribe */
+.footer-col form #subscribe {
+    padding-inline: 10px;
+    border-radius: 0 10px 10px 0;
+    border: none;
+    height: 100%;
+    font-size: var(--font-size-body1);
+    font-weight: var(--font-weight-heading);
+    color: var(--textdrak);
+    background-color: var(--secondary);
+}
+.sosial-media a i{
+    font-size: var(--font-size-body1);
+    margin-right: 5px;
+    color: var(--textdrak);
+    cursor: pointer;
+    padding: 10px;
+    background: var(--textlight);
+    border-radius: 100%;
+    transition: background .5s;
+}
+.sosial-media a i:hover{
+    background: var(--buttton);
+    color: var(--textlight);
+}
+
+
+/* styling copy right */
+.copy-right{
+    display: flex;
+    gap: 20px;
+    padding-inline: 120px;
+    padding-block: 10px;
+    justify-content: space-between;
+    background: var(--primary);
+}
+.copy-right p{
+    text-align: center;
+    color: var(--textlight);
+    font-size: var(--font-size-body4);
+}
+.copy-right .privacy{
+    display:flex; 
+    gap: 20px;
+}
+.copy-right .privacy a{
+    color: var(--textlight);
+    text-decoration: none;
+    font-size: var(--font-size-body4);
+}
+
+
+
+/* END styling copy right */
+
+/* End styling section footer */
