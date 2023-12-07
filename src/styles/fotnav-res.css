@@ -35,9 +35,7 @@
 }
 @media screen and (max-width: 768px){
     /* navbar */
-    .input-container{
-        max-width: 400px;
-    }
+
     #search{
         padding-block: 10px;
     }
@@ -161,4 +159,9 @@
         align-items: center;
     }
 
+}
+@media screen and (max-width: 320px){
+    .input-container{
+        max-width: 250px;
+    }
 }
