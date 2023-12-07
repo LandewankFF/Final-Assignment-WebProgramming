@@ -35,9 +35,7 @@
 }
 @media screen and (max-width: 768px){
     /* navbar */
-    .input-container{
-        max-width: 400px;
-    }
+
     #search{
         padding-block: 10px;
     }
@@ -163,7 +161,13 @@
 
 }
 @media screen and (max-width: 320px){
+<<<<<<< HEAD
     .input-container {
         max-width: 250px;
     } 
+=======
+    .input-container{
+        max-width: 250px;
+    }
+>>>>>>> app
 }
