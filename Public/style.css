@@ -37,13 +37,17 @@ body {
     font-family: 'Poppins', sans-serif;
     background: #f1eeee;
 }
+head{
+    width: 100%;
+}
 .hero-img{
     position: static;
     /* position: relative; */
 }
 .hero{
-    width: 100%;
+    /* width: 100%; */
     height: 550px;
+    /* display: flex; */
     background: var(--textdrak);
 }
 

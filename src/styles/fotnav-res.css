@@ -67,7 +67,7 @@
         opacity: 0;
         justify-content: center;
     }
-    .hidden{
+    .navigation.hidden{
         height: 300px;
         opacity: 1;
     }
@@ -161,4 +161,9 @@
         align-items: center;
     }
 
+}
+@media screen and (max-width: 320px){
+    .input-container {
+        max-width: 250px;
+    } 
 }
