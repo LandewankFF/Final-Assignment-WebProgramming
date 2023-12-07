@@ -37,6 +37,7 @@ body {
     font-family: 'Poppins', sans-serif;
     background: #f1eeee;
 }
+<<<<<<< HEAD
 head{
     width: 100%;
 }
@@ -49,6 +50,16 @@ head{
     height: 550px;
     /* display: flex; */
     background: var(--textdrak);
+=======
+
+.hero{
+    width: 100%;
+    height: 600px;
+    background-image: url("/Assets/receptionist.jpg");
+    background-position: center;
+    background-size: cover;
+
+>>>>>>> app
 }
 
 .hero-card{
