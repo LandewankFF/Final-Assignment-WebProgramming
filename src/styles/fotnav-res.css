@@ -161,13 +161,7 @@
 
 }
 @media screen and (max-width: 320px){
-<<<<<<< HEAD
     .input-container {
         max-width: 250px;
     } 
-=======
-    .input-container{
-        max-width: 250px;
-    }
->>>>>>> app
 }
