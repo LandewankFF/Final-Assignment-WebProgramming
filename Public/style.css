@@ -40,7 +40,6 @@ body {
 }
 head{
     width: 100%;
-<<<<<<< HEAD
 }
 .hero-img{
     position: static;
@@ -51,14 +50,6 @@ head{
     height: 550px;
     /* display: flex; */
     background: var(--textdrak);
-=======
-    height: 600px;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/Assets/hero.jpg");
-    /* background-position: ; */
-    background-size: cover;
-    /* display: flex;
-    align-items: center; */
->>>>>>> app
 }
 .caption-hero{
     width: 50%;
