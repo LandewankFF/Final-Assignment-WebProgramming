@@ -65,7 +65,7 @@
         opacity: 0;
         justify-content: center;
     }
-    .hidden{
+    .navigation.active{
         height: 300px;
         opacity: 1;
     }
