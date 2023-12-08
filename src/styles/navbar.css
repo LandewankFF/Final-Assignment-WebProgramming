@@ -41,6 +41,7 @@ header, nav {
     position: sticky;
     top: 0;
     background: var(--bgbody);
+    z-index: 2; /*Giving a higher position*/
 }
 
 .head {
