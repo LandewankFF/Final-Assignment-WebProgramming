@@ -2,7 +2,6 @@
 const hamburgerIcon = document.getElementById('hamburger-menu');
 const menuList = document.getElementById('menu-list')
 
-function toogleMenu(){
-    menuList.classList.toggle('hidden')
-}
-hamburgerIcon.addEventListener('click', toogleMenu);
+hamburgerIcon.addEventListener('click', () => {
+    menuList.classList.toggle('active');
+});

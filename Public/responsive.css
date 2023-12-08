@@ -11,6 +11,13 @@
     .card{
         box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
     }
+    .caption-hero{
+        width: 100%;
+        align-items: center;
+    }
+    .caption-hero h3{
+        text-align: center;
+    }
 }
 
 @media screen and (max-width: 425px){

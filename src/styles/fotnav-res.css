@@ -65,7 +65,11 @@
         opacity: 0;
         justify-content: center;
     }
+<<<<<<< HEAD
     .navigation.hidden{
+=======
+    .navigation.active{
+>>>>>>> app
         height: 300px;
         opacity: 1;
     }
