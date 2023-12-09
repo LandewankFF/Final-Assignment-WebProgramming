@@ -1,18 +1,19 @@
 {% load static %}
 
-<!-- Footer Structure -->
 <footer>
     <div class="footer-row">
-        <section class="footer-col logo">
+        <section class="footer-col logo-footer" data-aos="fade-right" data-aos-offset="300"
+            data-aos-easing="ease-in-sine" data-aos-duration="500">
             <div>
-                <img src="{% static 'accounts/images/1.png' %}" alt="Hospital Logo">
+                <img src="{% static 'img/home/logo_company.png' %}" alt="Hospital Logo">
             </div>
             <h3>Medika Nusantara</h3>
-            <p>Kawasan Inti Pusat Pemerintahan Ibu Kota Negara, Kecamatan Sepaku, Penajam Paser Utara, Kalimantan Timur
-            </p>
+            <p>Kawasan Inti Pusat Pemerintahan Ibu Kota Negara, Kecamatan Sepaku, Penajam Paser Utara, Kalimantan
+                Timur</p>
         </section>
 
-        <section class="footer-col">
+        <section class="footer-col" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine"
+            data-aos-duration="500">
             <h4>About Us</h4>
             <ul>
                 <li> <a href="#">History</a></li>
@@ -23,7 +24,8 @@
             </ul>
         </section>
 
-        <section class="footer-col">
+        <section class="footer-col" data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine"
+            data-aos-duration="500">
             <h4>Coporate</h4>
             <ul>
                 <li><a href="#">Buat Janji Temu</a></li>
@@ -33,13 +35,27 @@
             </ul>
         </section>
 
-        <section class="footer-col">
+        <section class="footer-col respon-news" data-aos="fade-left" data-aos-offset="300"
+            data-aos-easing="ease-in-sine" data-aos-duration="500">
             <h4>Newsletter</h4>
             <p>Subscribe to our newsletter for news, updates, helpful tips and exclusive offers.</p>
             <form action="#">
                 <input type="text" placeholder="Your email" required>
                 <button id="subscribe" type="submit">SUBSCRIBE</button>
             </form>
+            <div class="sosial-media">
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                <a href="#"><i class="fa-solid fa-envelope"></i></a>
+            </div>
         </section>
+    </div>
+    <div class="copy-right">
+        <p>Copyright &copy; 2023 Medika Nusantara. All rights reserved.</p>
+        <div class="privacy">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Help & Support</a>
+        </div>
     </div>
 </footer>
