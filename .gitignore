@@ -7,8 +7,5 @@ django_project/.venv
 # cache in apps or project
 __pycache__/
 
-# default database
-db.sqlite3
-
 # ignore file containing confidental information
 .env
