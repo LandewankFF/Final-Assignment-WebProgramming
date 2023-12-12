@@ -40,6 +40,7 @@ body {
 }
 head{
     width: 100%;
+<<<<<<< HEAD:Public/style.css
 }
 .hero-img{
     position: static;
@@ -50,13 +51,34 @@ head{
     height: 550px;
     /* display: flex; */
     background: var(--textdrak);
+=======
+    height: 600px;
+    position: relative;
+>>>>>>> app:style.css
 }
+.hero-img-container{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.hero .hero-img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top;
+}
+
 .caption-hero{
+    position: absolute;
+    z-index: 1;
     width: 50%;
     height: 100%;
     display: flex;
     flex-direction: column;
-    color: var(--textlight);
+    color: var(--textdrak);
     justify-content: center;
 }
 .caption-hero h3{
