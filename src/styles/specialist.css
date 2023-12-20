@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary: #335846;
+    --secondary: #DEB887;
+    --secondary-hover: rgb(233, 194, 142);
+    --buttton: #0799ce;
+    --buttton-hover: #0db1ec;
+    --container: #e9e2e2;
+    --textlight: #FDFDFD;
+    --textdrak: #0F172A;
+    --bgbody: #f1eeee;
+
+    --font-weight-heading: 700;
+    --font-weight-body: 400;
+
+    --font-size-h1: 3rem;
+    --font-size-h2: 2.25rem;
+    --font-size-h3: 1.875rem;
+    --font-size-h4: 1.5rem;
+    --font-size-h5: 1.25rem;
+
+    --font-size-body1: 1.25rem;
+    --font-size-body2: 1rem;
+    --font-size-body3: 0.875rem;
+    --font-size-body4: 0.75rem;
+}
+
+.hero-specialist{
+    width: 100%;
+    height: 300px;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/Assets/national-cancer-institute-c6rgP7K5rXc-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+.hero-specialist h1{
+    color: var(--textlight);
+    font-size: var(--font-size-h1);
+}
+
+
+.our-specialist h3{
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: var(--font-size-h4);
+}
+.card-specialist{
+    width: 18rem;
+    height: auto;
+    /* border: 2px solid black; */
+    background: var(--container);
+    padding: 10px;
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.50);
+    background: var(--container);
+}
+
+.card-specialist-list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+
+}
+.icon-specialist{
+    width: 100px; 
+    height: 100px; 
+    background-color: rgb(233, 194, 142, 0.3);
+    border-radius: 50%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto; 
+}
+.icon-specialist img{
+    width: 50%;
+}
+.card-body{
+    background-color: var(--buttton);
+    margin-top: 15px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+
+}
+.card-body a{
+    text-decoration: none;
+    text-align: center;
+    /* padding-inline: 15px; */
+    width: 100%;
+    padding-block: 5px;
+    /* background: var(--buttton); */
+    color: var(--textlight);
+    border-radius: 5px;
+}
