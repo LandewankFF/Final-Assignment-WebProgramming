@@ -40,7 +40,6 @@ body {
 }
 head{
     width: 100%;
-<<<<<<< HEAD:Public/style.css
 }
 .hero-img{
     position: static;
@@ -50,11 +49,9 @@ head{
     /* width: 100%; */
     height: 550px;
     /* display: flex; */
-    background: var(--textdrak);
-=======
     height: 600px;
     position: relative;
->>>>>>> app:style.css
+
 }
 .hero-img-container{
     position: absolute;
