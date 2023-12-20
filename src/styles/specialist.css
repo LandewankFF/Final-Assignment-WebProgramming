@@ -93,10 +93,8 @@
 .card-body a{
     text-decoration: none;
     text-align: center;
-    /* padding-inline: 15px; */
     width: 100%;
     padding-block: 5px;
-    /* background: var(--buttton); */
     color: var(--textlight);
     border-radius: 5px;
 }

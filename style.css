@@ -43,12 +43,10 @@ head{
 }
 .hero-img{
     position: static;
-    /* position: relative; */
+    
 }
 .hero{
-    /* width: 100%; */
     height: 550px;
-    /* display: flex; */
     background: var(--textdrak);
     height: 600px;
     position: relative;
@@ -79,7 +77,6 @@ head{
 
 .caption-hero{
     position: absolute;
-    /* z-index: 1; */
     width: 50%;
     height: 100%;
     display: flex;
@@ -98,7 +95,6 @@ head{
 .caption-hero div button{
     padding-inline: 30px;
     padding-block:10px;
-    /* width: 50%; */
     border-radius: 5px;
     border: none;
     color: var(--textlight);
@@ -116,11 +112,6 @@ head{
     flex-wrap: wrap;
     gap: 20px;
     justify-content: center;
-    /* position: absolute;
-    top: 70%;
-    width: 100%;
-    left: 50%;
-    transform: translateX(-50%); */
 }
 .wrapp{
     width: 250px;
@@ -128,7 +119,6 @@ head{
     background: var(--secondary);
     border-radius: 5px;
     padding: 20px;
-    /* position: relative; */
     transition: background 0.5 ease-in;
 }
 .wrapp:hover{
@@ -139,7 +129,6 @@ head{
     flex-direction: column;
     align-items: center;
     gap: 20px;
-    /* position: relative; */
     width: 100%;
 }
 .img-card h5{
@@ -159,11 +148,9 @@ head{
 .caption-card p{
     text-align: center;
     font-size: var(--font-size-body4);
-    /* margin-top: 15px; */
 }
 
 .wrapp a{
-    /* padding-inline: 10px; */
     padding-block: 5px;
     text-align: center;
     width: 150px;
@@ -172,10 +159,6 @@ head{
     font-size: var(--font-size-body2);
     font-weight: var(--font-weight-heading);
     border-radius: 5px;
-    /* position: absolute;
-    bottom: 20px;
-    left: 50%;
-    transform: translateX(-50%); */
     text-decoration: none;
 }
 .wrapp a:hover{
@@ -185,7 +168,6 @@ head{
 
 .about{
     display: flex;
-    /* flex-wrap: wrap; */
     width: 100%;
     gap: 20px;
 }
@@ -214,7 +196,6 @@ head{
     text-decoration: none;
     color: var(--textlight);
     padding-block: 5px;
-    /* padding-inline: 10px; */
     width: 120px;
     text-align: center;
     background: var(--buttton);
@@ -226,15 +207,14 @@ head{
 }
 
 
-/* styling section card */
+
 .news{
     display: flex;
     justify-content: space-between;
-    /* width: fit-content; */
     gap: 10px;
 }
 .card:hover .img-container {
-    transform: scale(1.1); /* Skala gambar sedikit lebih besar saat dihover */
+    transform: scale(1.1); 
     transition: transform 0.3s ease;
 }
 .card{
@@ -251,13 +231,10 @@ head{
 .img-container img{
     width: 100%;
     transition: transform 0.3s ease;
-    /* border-radius: 10px 10px 0 0; */
 }
 .content{
     padding: 10px;
     width: 100%;
-    /* max-height: 400px;
-    height: 100%; */
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -286,7 +263,6 @@ head{
     width: 100%;
     padding-block: 5px;
     border-radius: 5px;
-    /* padding-inline: 10px; */
     text-decoration: none;
     color: var(--textlight);
     background: var(--buttton);
@@ -299,4 +275,3 @@ section h5{
     font-size: var(--font-size-h5);
     margin-bottom: 20px;
 }
-/* END styling section card */
