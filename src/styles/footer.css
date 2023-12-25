@@ -122,7 +122,6 @@ footer {
 }
 
 .footer-col form input {
-    /* width: 211px; */
     height: 100%;
     border-radius: 10px 0 0 10px;
     padding-left: 10px;
@@ -138,11 +137,11 @@ footer {
     padding-inline: 10px;
     border-radius: 0 10px 10px 0;
     border: none;
-    height: 100%;
-    font-size: var(--font-size-body1);
+    font-size: var(--font-size-body2);
     font-weight: var(--font-weight-heading);
     color: var(--textdrak);
     background-color: var(--secondary);
+
 }
 .sosial-media a i{
     font-size: var(--font-size-body1);
