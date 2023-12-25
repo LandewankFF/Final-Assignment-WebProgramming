@@ -164,4 +164,8 @@
     .input-container {
         max-width: 250px;
     } 
+    .footer-row{
+        justify-content: center;
+        text-align: center;
+    }
 }
