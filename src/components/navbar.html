@@ -39,7 +39,7 @@
                 </form>
             </div>
             <div class="menu">
-                <div class="emergency-call">
+                <div class="emergency-call" id="emergencyCall">
                     <i class="fa-solid fa-phone"></i>
                     <p>Emergency Call</p>
                 </div>
@@ -49,37 +49,47 @@
                 </div>
             </div>
         </div>
+        <!--structure navigation bar -->
+       <nav class="wrapp-nav container">
+           <div class="hamburger" id="hamburger-menu">
+               <i class="fa-solid fa-bars" id="hamburgericon" style="color: #0F172A;"></i>
+           </div>
+           <ul class="navigation" id="menu-list">
+               <li><a href="#" class="active">Porch</a></li>
+               <li><a href="#">Appointments</a></li>
+               <li><a href="#">Service</a></li>
+               <li><a href="#">Information</a></li>
+               <a class="disable-login">Login/Register</a>
+           </ul>
+           <div class="search" id="search-nav">
+               <form>
+                   <div class="input-container">
+                       <i class="icon-search fas fa-search"></i>
+                       <input type="text" class="input-text" placeholder="Search service information">
+                       <button id="search">Search</button>
+                   </div>
+               </form>
+           </div>
+           <div class="login-register">
+               <a href="#">Login/Register</a>
+           </div>
+       </nav>
+       <!-- End structure navigation bar  -->
     </header>
     <!-- End header Structure -->
 
-     <!--structure navigation bar -->
-    <nav class="wrapp-nav container">
-        <div class="hamburger" id="hamburger-menu">
-            <i class="fa-solid fa-bars" id="hamburgericon" style="color: #0F172A;"></i>
-        </div>
-        <ul class="navigation" id="menu-list">
-            <li><a href="#" class="active">Porch</a></li>
-            <li><a href="#">Appointments</a></li>
-            <li><a href="#">Service</a></li>
-            <li><a href="#">Information</a></li>
-            <a class="disable-login">Login/Register</a>
-        </ul>
-        <div class="search" id="search-nav">
-            <form>
-                <div class="input-container">
-                    <i class="icon-search fas fa-search"></i>
-                    <input type="text" class="input-text" placeholder="Search service information">
-                    <button id="search">Search</button>
-                </div>
-            </form>
-        </div>
-        <div class="login-register">
-            <a href="#">Login/Register</a>
-        </div>
-    </nav>
-    <!-- End structure navigation bar  -->
 
     <script src="/src/script/menu.js"></script>
 </body>
+<script>
+    const emergencyCall = document.getElementById('emergencyCall');
+    if (emergencyCall) {
+        emergencyCall.style.cursor = 'pointer'
+        emergencyCall.addEventListener('click', function () {
+            const phoneNumber = '+6282112706323';
 
+            window.location.href = 'tel:' + phoneNumber;
+        });
+    }
+</script>
 </html>
