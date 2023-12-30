@@ -1,0 +1,8 @@
+.list-wrapp{
+    width:60%;
+    height: auto;
+    background: var(--secondary);
+}
+.list-wrapp h2{
+    text-align: center;
+}
