@@ -1,37 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
-    
-        <title>RS Medika Nusantara | Ibu Kota Nusantara </title>
-        <!-- get icon  -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-            integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-            crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <!-- style website using CSS -->
-        <link rel="stylesheet" href="/src/styles/navbar.css"> <!--Navbar-->
-        <link rel="stylesheet" href="/src/styles/footer.css">
-        <link rel="stylesheet" href="/src/styles/fotnav-res.css"> <!--Responsive navbar and Footer-->
-        <link rel="stylesheet" href="style.css"> <!-- Prorch css-->
-        <link rel="stylesheet" href="responsive.css">
-        <link rel="stylesheet" href="/src/styles/information.css">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
+
+    <title>RS Medika Nusantara | Ibu Kota Nusantara </title>
+    <!-- get icon  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- style website using CSS -->
+    <link rel="stylesheet" href="/src/styles/navbar.css"> <!--Navbar-->
+    <link rel="stylesheet" href="/src/styles/footer.css">
+    <link rel="stylesheet" href="/src/styles/fotnav-res.css"> <!--Responsive navbar and Footer-->
+    <link rel="stylesheet" href="style.css"> <!-- Prorch css-->
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="/src/styles/information.css">
 
 
-    
-        <!-- add font from google font -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link
-            href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300&family=Noto+Sans+JP:wght@300;400&family=Poppins:wght@200;400;600&display=swap"
-            rel="stylesheet">
-        <link rel="icon" href="/Assets/logo company.png" />
-        <!-- Animation on scroll -->
-        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    </head>
+
+    <!-- add font from google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300&family=Noto+Sans+JP:wght@300;400&family=Poppins:wght@200;400;600&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="/Assets/logo company.png" />
+    <!-- Animation on scroll -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+
 <body>
-     <!-- header Structure -->
-     <header>
+    <!-- header Structure -->
+    <header>
         <div class="head container">
             <div class="logo">
                 <img src="/Assets/logo company.png" alt="logo">
@@ -65,7 +67,7 @@
             <ul class="navigation hidden" id="menu-list">
                 <li><a href="/index.html">Porch</a></li>
                 <li><a href="/Pages/appointments.html">Appointments</a></li>
-                <li><a href="/Pages/service.html" >Service</a></li>
+                <li><a href="/Pages/service.html">Service</a></li>
                 <li><a href="#" class="active">Information</a></li>
                 <a class="disable-login">Login/Register</a>
             </ul>
@@ -87,44 +89,78 @@
     <!-- End header Structure -->
 
     <section class="FAQ container">
-        <div class="list-wrapp">
+        <div class="bg-list">
             <h2>Frequently asked questions</h2>
-            <button id="list-btn" class="list-btn">
-                Bagaimana cara menghubungi layanan gawat darurat?
-                <div class="icon-btn">
-                    <i class="fa-solid fa-plus btn-icon plus-icon"></i>
-                    <i class="fa-solid fa-minus btn-icon minus-icon"></i>
+            <div class="list-wrapp">
+                <button id="list-btn" class="list-btn">
+                    Bagaimana cara menghubungi layanan gawat darurat?
+                    <div class="icon-btn">
+                        <i class="fa-solid fa-plus btn-icon plus-icon" id="plus-icon"></i>
+                        <i class="fa-solid fa-minus btn-icon minus-icon" id="minus-icon"></i>
+                    </div>
+                </button>
+                <div class="list-desc" id="list-desc">
+                    <p>Dapat menghubungi layanan rumah sakit melalui kontak yang tersedia. Pastikan dalam pengisian dan
+                        data diri sesuai dengan ketentuan. </p>
                 </div>
-            </button>
-            <div class="list-desc">
-                <p>Dapat menghubungi layanan rumah sakit melalui kontak yang tersedia. Pastikan dalam pengisian dan data diri sesuai dengan ketentuan. </p>
+            </div>
+            <div class="list-wrapp">
+                <button id="list-btn" class="list-btn">
+                    Bagaimana cara melakukan janji dokter?
+                    <div class="icon-btn">
+                        <i class="fa-solid fa-plus btn-icon plus-icon"></i>
+                        <i class="fa-solid fa-minus btn-icon minus-icon"></i>
+                    </div>
+                </button>
+                <div class="list-desc">
+                    <p>Dapat menghubungi layanan rumah sakit melalui kontak yang tersedia. Pastikan dalam pengisian dan
+                        data diri sesuai dengan ketentuan. </p>
+                </div>
+            </div>
+            <div class="list-wrapp">
+                <button id="list-btn" class="list-btn">
+                    Bagaimana dapat mengakses rekam medis pasien?
+                    <div class="icon-btn">
+                        <i class="fa-solid fa-plus btn-icon plus-icon"></i>
+                        <i class="fa-solid fa-minus btn-icon minus-icon"></i>
+                    </div>
+                </button>
+                <div class="list-desc">
+                    <p>Dapat menghubungi layanan rumah sakit melalui kontak yang tersedia. Pastikan dalam pengisian dan
+                        data diri sesuai dengan ketentuan. </p>
+                </div>
             </div>
         </div>
-        <div class="list-wrapp">
-            <button id="list-btn" class="list-btn">
-                Bagaimana cara melakukan janji dokter?
-                <div class="icon-btn">
-                    <i class="fa-solid fa-plus btn-icon plus-icon"></i>
-                    <i class="fa-solid fa-minus btn-icon minus-icon"></i>
-                </div>
-            </button>
-            <div class="list-desc">
-                <p>Dapat menghubungi layanan rumah sakit melalui kontak yang tersedia. Pastikan dalam pengisian dan data diri sesuai dengan ketentuan. </p>
-            </div>
-        </div>
-        <div class="list-wrapp">
-            <button id="list-btn" class="list-btn">
-                Bagaimana dapat mengakses rekam medis pasien?
-                <div class="icon-btn">
-                    <i class="fa-solid fa-plus btn-icon plus-icon"></i>
-                    <i class="fa-solid fa-minus btn-icon minus-icon"></i>
-                </div>
-            </button>
-            <div class="list-desc">
-                <p>Dapat menghubungi layanan rumah sakit melalui kontak yang tersedia. Pastikan dalam pengisian dan data diri sesuai dengan ketentuan. </p>
-            </div>
-        </div>
+
     </section>
 
+    <!-- Functuion information FAQ -->
+    <script>
+        const listWrappers = document.querySelectorAll('.list-wrapp');
+
+        listWrappers.forEach(function (listWrapper) {
+            const plusIcon = listWrapper.querySelector('.plus-icon');
+            const minusIcon = listWrapper.querySelector('.minus-icon');
+            const desc = listWrapper.querySelector('.list-desc');
+
+            plusIcon.addEventListener('click', function () {
+                //Display a description when a question is clicked
+                desc.style.display = 'block';
+                plusIcon.style.display = 'none';
+                minusIcon.style.display = 'block';
+            });
+
+            minusIcon.addEventListener('click', function () {
+                // Hide descriptions when the minus icon is clicked
+                desc.style.display = 'none';
+                plusIcon.style.display = 'block';
+                minusIcon.style.display = 'none';
+            });
+        });
+
+
+    </script>
+
 </body>
+
 </html>

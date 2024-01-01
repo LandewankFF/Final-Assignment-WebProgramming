@@ -1,8 +1,54 @@
-.list-wrapp{
+
+.bg-list{
     width:60%;
-    height: auto;
     background: var(--secondary);
+    padding: 20px;
+    border-radius: 10px;
 }
-.list-wrapp h2{
+.bg-list h2{
     text-align: center;
+    padding-block: 10px;
 }
+.list-wrapp{
+    margin-bottom: 15px;
+}
+.list-wrapp button{
+    cursor: pointer;
+    background-color: transparent;
+    width: 100%;
+    display: inline-flex;
+    justify-content: space-between;
+    /* padding-inline: 20px; */
+    font-size: var(--font-size-body3);
+    border: none;
+    font-weight: bolder;
+}
+.list-wrapp button .icon-btn{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.list-wrapp button .btn-icon{
+    width: 100%;
+    display: block;
+}
+.list-wrapp button .icon-btn .plus-icon{
+    background-color: var(--primary);
+    padding: 5px;
+    border-radius: 50%;
+    color: var(--textlight);
+}
+.list-wrapp button .icon-btn .minus-icon{
+    display: none;
+    background-color: #e72d2d;
+    padding: 5px;
+    border-radius: 50%;
+    color: var(--textlight);
+}
+.list-wrapp .list-desc{
+    font-size: var(--font-size-body3);
+    width: 90%;
+    display: none;
+}
+
+
