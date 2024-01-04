@@ -88,54 +88,66 @@
     </header>
     <!-- End header Structure -->
 
-    <section class="FAQ container">
-        <div class="bg-list">
-            <h2>Frequently asked questions</h2>
-            <div class="list-wrapp">
-                <button id="list-btn" class="list-btn">
-                    Bagaimana cara menghubungi layanan gawat darurat?
-                    <div class="icon-btn">
-                        <i class="fa-solid fa-plus btn-icon plus-icon" id="plus-icon"></i>
-                        <i class="fa-solid fa-minus btn-icon minus-icon" id="minus-icon"></i>
+
+    <section class="container style1">
+        <div class="content-left">
+            <div class="bg-list">
+                <h2>Frequently asked questions</h2>
+                <div class="list-wrapp">
+                    <button id="list-btn" class="list-btn">
+                        Bagaimana cara menghubungi layanan gawat darurat?
+                        <div class="icon-btn">
+                            <i class="fa-solid fa-plus btn-icon plus-icon" id="plus-icon"></i>
+                            <i class="fa-solid fa-minus btn-icon minus-icon" id="minus-icon"></i>
+                        </div>
+                    </button>
+                    <div class="list-desc" id="list-desc">
+                        <p>Dapat menghubungi layanan rumah sakit melalui kontak yang tersedia. Pastikan dalam pengisian
+                            dan
+                            data diri sesuai dengan ketentuan. </p>
                     </div>
-                </button>
-                <div class="list-desc" id="list-desc">
-                    <p>Dapat menghubungi layanan rumah sakit melalui kontak yang tersedia. Pastikan dalam pengisian dan
-                        data diri sesuai dengan ketentuan. </p>
                 </div>
-            </div>
-            <div class="list-wrapp">
-                <button id="list-btn" class="list-btn">
-                    Bagaimana cara melakukan janji dokter?
-                    <div class="icon-btn">
-                        <i class="fa-solid fa-plus btn-icon plus-icon"></i>
-                        <i class="fa-solid fa-minus btn-icon minus-icon"></i>
+                <div class="list-wrapp">
+                    <button id="list-btn" class="list-btn">
+                        Bagaimana cara melakukan janji dokter?
+                        <div class="icon-btn">
+                            <i class="fa-solid fa-plus btn-icon plus-icon"></i>
+                            <i class="fa-solid fa-minus btn-icon minus-icon"></i>
+                        </div>
+                    </button>
+                    <div class="list-desc">
+                        <p>Dapat menghubungi layanan rumah sakit melalui kontak yang tersedia. Pastikan dalam pengisian
+                            dan
+                            data diri sesuai dengan ketentuan. </p>
                     </div>
-                </button>
-                <div class="list-desc">
-                    <p>Dapat menghubungi layanan rumah sakit melalui kontak yang tersedia. Pastikan dalam pengisian dan
-                        data diri sesuai dengan ketentuan. </p>
                 </div>
-            </div>
-            <div class="list-wrapp">
-                <button id="list-btn" class="list-btn">
-                    Bagaimana dapat mengakses rekam medis pasien?
-                    <div class="icon-btn">
-                        <i class="fa-solid fa-plus btn-icon plus-icon"></i>
-                        <i class="fa-solid fa-minus btn-icon minus-icon"></i>
+                <div class="list-wrapp">
+                    <button id="list-btn" class="list-btn">
+                        Bagaimana dapat mengakses rekam medis pasien?
+                        <div class="icon-btn">
+                            <i class="fa-solid fa-plus btn-icon plus-icon"></i>
+                            <i class="fa-solid fa-minus btn-icon minus-icon"></i>
+                        </div>
+                    </button>
+                    <div class="list-desc">
+                        <p>Dapat menghubungi layanan rumah sakit melalui kontak yang tersedia. Pastikan dalam pengisian
+                            dan
+                            data diri sesuai dengan ketentuan. </p>
                     </div>
-                </button>
-                <div class="list-desc">
-                    <p>Dapat menghubungi layanan rumah sakit melalui kontak yang tersedia. Pastikan dalam pengisian dan
-                        data diri sesuai dengan ketentuan. </p>
                 </div>
+
             </div>
         </div>
-
+        <div class="content-right">
+            <img src="/Assets/nurse.png" alt="nurse">
+        </div>
     </section>
+
+
 
     <!-- Functuion information FAQ -->
     <script>
+
         const listWrappers = document.querySelectorAll('.list-wrapp');
 
         listWrappers.forEach(function (listWrapper) {
@@ -144,14 +156,23 @@
             const desc = listWrapper.querySelector('.list-desc');
 
             plusIcon.addEventListener('click', function () {
-                //Display a description when a question is clicked
+                // Menutup deskripsi yang sebelumnya terbuka
+                const allPlusIcons = document.querySelectorAll('.plus-icon');
+                const allMinusIcons = document.querySelectorAll('.minus-icon');
+                const allDescs = document.querySelectorAll('.list-desc');
+
+                allPlusIcons.forEach(icon => icon.style.display = 'block');
+                allMinusIcons.forEach(icon => icon.style.display = 'none');
+                allDescs.forEach(desc => desc.style.display = 'none');
+
+                // Membuka deskripsi pada tanda plus yang diklik
                 desc.style.display = 'block';
                 plusIcon.style.display = 'none';
                 minusIcon.style.display = 'block';
             });
 
             minusIcon.addEventListener('click', function () {
-                // Hide descriptions when the minus icon is clicked
+                // Menyembunyikan deskripsi saat tanda minus diklik
                 desc.style.display = 'none';
                 plusIcon.style.display = 'block';
                 minusIcon.style.display = 'none';
