@@ -87,6 +87,9 @@
         display: flex;
         justify-content: center;
     }
+    .footer-row{
+        justify-content: center;
+    }
 }
 @media screen and (max-width: 425px){
     /* navbar */
