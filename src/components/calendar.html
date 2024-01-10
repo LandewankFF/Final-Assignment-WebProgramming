@@ -3,16 +3,52 @@
 
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>
-            Calendar
-        </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
+    
+        <title>RS Medika Nusantara | Ibu Kota Nusantara </title>
+        <!-- get icon  -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+            integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link rel="stylesheet" href="/src/styles/calendar.css">
         <link rel="stylesheet" href="/src/styles/appointments.css">
         <link rel="stylesheet" href="/src/styles/navbar.css">
+        <link rel="stylesheet" href="/src/styles/footer.css">
+        <link rel="stylesheet" href="/src/styles/fotnav-res.css"> <!--Responsive navbar and Footer-->
     </head>
 
     <body>
+        <!-- header Structure -->
+    <header>
+        <div class="head container">
+            <div class="logo">
+                <img src="/Assets/logo company.png" alt="logo">
+                <h4>Medika Nusantara</h4>
+            </div>
+            <div class="search">
+                <form>
+                    <div class="input-container">
+                        <i class="icon-search fas fa-search"></i>
+                        <input type="text" class="input-text" placeholder="Search service information">
+                        <button id="search">Search</button>
+                    </div>
+                </form>
+            </div>
+            <div class="menu">
+                <div class="emergency-call" id="emergencyCall">
+                    <i class="fa-solid fa-phone"></i>
+                    <p>Emergency Call</p>
+                </div>
+                <div class="language">
+                    <i class="fa-solid fa-globe"></i>
+                    <p>ID</p>
+                </div>
+            </div>
+        </div>
+     
+    </header>
+    <!-- End header Structure -->
+
         <section class="calendar-wrapp container">
             <h2>Make a Doctor Appointmentt</h2>
             <div class="book">
@@ -34,32 +70,53 @@
                         </div>
                     </div>
                 </div>
-                <div class="calendar">
-                    <div class="calendar-header">
-                        <span class="month-picker" id="month-picker">February</span>
-                        <div class="year-picker">
-                            <span class="year-change" id="prev-year">
-                                <pre><</pre>
-                            </span>
-                            <span id="year">2021</span>
-                            <span class="year-change" id="next-year">
-                                <pre>></pre>
-                            </span>
+                <div class="calendar-book">
+                    <div class="calendar">
+                        <div class="calendar-header">
+                            <span class="month-picker" id="month-picker">February</span>
+                            <div class="year-picker">
+                                <span class="year-change" id="prev-year">
+                                    <pre><</pre>
+                                </span>
+                                <span id="year">2021</span>
+                                <span class="year-change" id="next-year">
+                                    <pre>></pre>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="calendar-body">
+                            <div class="calendar-week-day">
+                                <div>Sun</div>
+                                <div>Mon</div>
+                                <div>Tue</div>
+                                <div>Wed</div>
+                                <div>Thu</div>
+                                <div>Fri</div>
+                                <div>Sat</div>
+                            </div>
+                            <div class="calendar-days"></div>
+                        </div>
+                        <div class="month-list"></div>
+                    </div>
+                    <div class="book-schedule">
+                        <h3>Sellect Time
+                        </h3>
+                        <div class="time-wrapp">
+                            <div class="time-book">
+                               <span> 07:30 - 09:30</span>
+                               <span> 09:30 - 11:30</span>
+                               <span> 13:00 - 15:00</span>
+                            </div>
+                            <div class="time-book">
+                               <span> 16:00 - 18:00</span>
+                               <span> 18:00 - 20:00</span>
+                               <span> 20:00 - 22:00</span>
+                            </div>
+                        </div>
+                        <div class="book-click">
+                            <a href="#">Book</a>
                         </div>
                     </div>
-                    <div class="calendar-body">
-                        <div class="calendar-week-day">
-                            <div>Sun</div>
-                            <div>Mon</div>
-                            <div>Tue</div>
-                            <div>Wed</div>
-                            <div>Thu</div>
-                            <div>Fri</div>
-                            <div>Sat</div>
-                        </div>
-                        <div class="calendar-days"></div>
-                    </div>
-                    <div class="month-list"></div>
                 </div>
         
                 <input type="hidden" id="hidden-date" name="selected-date">
@@ -68,6 +125,69 @@
             
         </section>
 
+
+        <!-- Footer Structure -->
+    <footer>
+        <div class="footer-row">
+            <section class="footer-col logo-footer" data-aos="fade-right" data-aos-offset="300"
+                data-aos-easing="ease-in-sine" data-aos-duration="500">
+                <div>
+                    <img src="/Assets/logo company.png" alt="Hospital Logo">
+                </div>
+                <h3>Medika Nusantara</h3>
+                <p>Kawasan Inti Pusat Pemerintahan Ibu Kota Negara, Kecamatan Sepaku, Penajam Paser Utara, Kalimantan
+                    Timur</p>
+            </section>
+
+            <section class="footer-col" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine"
+                data-aos-duration="500">
+                <h4>About Us</h4>
+                <ul>
+                    <li> <a href="#">History</a></li>
+                    <li><a href="#">Overview</a></li>
+                    <li><a href="#">Investor Relations</a></li>
+                    <li><a href="#">Education and Training</a></li>
+                    <li><a href="#">Our Management</a></li>
+                </ul>
+            </section>
+
+            <section class="footer-col" data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine"
+                data-aos-duration="500">
+                <h4>Coporate</h4>
+                <ul>
+                    <li><a href="#">Buat Janji Temu</a></li>
+                    <li><a href="#">Cari Dokter</a></li>
+                    <li><a href="#">Cari Lokasi</a></li>
+                    <li><a href="#">Karir</a></li>
+                </ul>
+            </section>
+
+            <section class="footer-col respon-news" data-aos="fade-left" data-aos-offset="300"
+                data-aos-easing="ease-in-sine" data-aos-duration="500">
+                <h4>Newsletter</h4>
+                <p>Subscribe to our newsletter for news, updates, helpful tips and exclusive offers.</p>
+                <form action="#">
+                    <input type="text" placeholder="Your email" required>
+                    <button id="subscribe" type="submit">SUBSCRIBE</button>
+                </form>
+                <div class="sosial-media">
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="#"><i class="fa-solid fa-envelope"></i></a>
+                </div>
+            </section>
+        </div>
+        <div class="copy-right">
+            <p>Copyright &copy; 2023 Medika Nusantara. All rights reserved.</p>
+            <div class="privacy">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Help & Support</a>
+            </div>
+        </div>
+    </footer>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>AOS.init();</script>
         <script src="/src/script/calendar.js"></script>
     </body>
 

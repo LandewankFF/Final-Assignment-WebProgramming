@@ -24,6 +24,28 @@
     margin: 0;
     box-sizing: border-box;
 }
+.time-wrapp{
+    display: flex;
+    gap: 50px;
+    margin-top: 20px;
+}
+.time-book{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.time-book span{
+    padding-inline: 20px;
+    padding-block: 10px;
+    background: var(--dark-second);
+    border-radius: 5px;
+    color: var(--dark-text);
+    cursor: pointer;
+
+}
+.time-book span.selected {
+    background: var(--blue);
+}
 .calendar-wrapp h2{
     margin-bottom: 30px;
 }
@@ -32,9 +54,29 @@
     gap: 50px;
     justify-content: space-between;
 }
+.calendar-book{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+.book-click{
+    display: flex;
+    justify-content: center;
+}
+.book-schedule div a{
+    padding-inline: 30px;
+    padding-block: 10px;
+    margin-top: 30px;
+    text-decoration: none;
+    color: var(--dark-text);
+    background: #0000ff;
+    border-radius: 5px;
+    
+}
 .card-appoiments-calendar{
     width: 18rem;
-    height: 260px;
+    height: 240px;
     background: var(--container);
     box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.50);
     background: var(--container);

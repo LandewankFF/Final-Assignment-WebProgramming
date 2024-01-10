@@ -100,3 +100,18 @@ document.querySelector('#next-year').onclick = () => {
     ++curr_year.value
     generateCalendar(curr_month.value, curr_year.value)
 }
+
+
+const timeSpans = document.querySelectorAll('.time-wrapp .time-book span');
+
+    timeSpans.forEach(span => {
+        span.addEventListener('click', () => {
+            // Menghapus kelas 'selected' dari semua elemen span
+            timeSpans.forEach(span => {
+                span.classList.remove('selected');
+            });
+
+            // Menambah kelas 'selected' ke elemen yang diklik
+            span.classList.add('selected');
+        });
+    });
