@@ -63,8 +63,9 @@
 .book-click{
     display: flex;
     justify-content: center;
+    margin-top: 15px;
 }
-.book-schedule div a{
+.book-click form button{
     padding-inline: 30px;
     padding-block: 10px;
     margin-top: 30px;
@@ -72,6 +73,7 @@
     color: var(--dark-text);
     background: #0000ff;
     border-radius: 5px;
+    border: none;
     
 }
 .card-appoiments-calendar{
@@ -107,7 +109,6 @@
     color: var(--color-txt);
     padding-inline: 10px;
     padding-top: 20px;
-    /* margin: auto; */
 }
 
 .calendar-body {
