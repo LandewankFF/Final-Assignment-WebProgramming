@@ -24,6 +24,23 @@
     .news{
         justify-content: center;
     }
+    /* Page calendar */
+    .book{
+        flex-direction: column;
+        /* justify-content: center; */
+        align-items: center;
+        gap: 20px;
+    }
+    .card-appoiments-calendar{
+        width: 100%;
+    }
+    .calendar-wrapp h2{
+        font-size: var( --font-size-h5);
+        margin-bottom: 10px;
+    }
+    .year-change{
+        width: 20px;
+    }
     .logo-footer{
         width: 100%;
         justify-content: center;

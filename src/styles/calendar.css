@@ -78,7 +78,7 @@
 }
 .card-appoiments-calendar{
     width: 18rem;
-    height: 260px;
+    height: 240px;
     background: var(--container);
     box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.50);
     background: var(--container);
@@ -104,11 +104,12 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-size: 25px;
+    font-size: var(--font-size-body1);
     font-weight: 600;
     color: var(--color-txt);
-    padding-inline: 50px;
+    padding-inline: 10px;
     padding-top: 20px;
+    /* margin: auto; */
 }
 
 .calendar-body {
@@ -200,39 +201,8 @@
     align-items: center;
 }
 
-.toggle {
-    display: flex;
-}
 
-.toggle span {
-    margin-right: 10px;
-    color: var(--color-txt);
-}
 
-.dark-mode-switch {
-    position: relative;
-    width: 48px;
-    height: 25px;
-    border-radius: 14px;
-    background-color: var(--bg-second);
-    cursor: pointer;
-}
-
-.dark-mode-switch-ident {
-    width: 21px;
-    height: 21px;
-    border-radius: 50%;
-    background-color: var(--bg-main);
-    position: absolute;
-    top: 2px;
-    left: 2px;
-    transition: left 0.2s ease-in-out;
-}
-
-.dark .dark-mode-switch .dark-mode-switch-ident {
-    top: 2px;
-    left: calc(2px + 50%);
-}
 
 .month-list {
     position: absolute;
