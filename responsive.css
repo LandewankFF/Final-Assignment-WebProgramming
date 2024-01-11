@@ -27,7 +27,6 @@
     /* Page calendar */
     .book{
         flex-direction: column;
-        /* justify-content: center; */
         align-items: center;
         gap: 20px;
     }
@@ -41,6 +40,10 @@
     .year-change{
         width: 20px;
     }
+    .book-click{
+        gap: 20px;
+    }
+    /* Page calendar */
     .logo-footer{
         width: 100%;
         justify-content: center;
