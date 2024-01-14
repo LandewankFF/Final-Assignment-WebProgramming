@@ -161,7 +161,7 @@
     text-decoration: none;
     align-items: center;
 }
-.make-appoitment span{
+/* .make-appoitment span{
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -170,7 +170,7 @@
     height: 50px;
     border-radius: 50%;
     background: var(--primary);
-}
+} */
 .make-appoitment a{
     color: var(--textlight);
     background: var(--buttton);
@@ -178,4 +178,5 @@
     padding-block: 10px;
     border-radius: 5px;
     text-decoration: none;
+    cursor: pointer;
 }
