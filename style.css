@@ -41,16 +41,15 @@ body {
 head{
     width: 100%;
 }
-.hero-img{
-    position: static;
-    
-}
-.hero{
-    height: 550px;
-    background: var(--textdrak);
+
+.hero {
+    width: 100%;
+    max-width: 100%; /* Tambahkan max-width */
     height: 600px;
+    background: var(--textdrak);
     position: relative;
 }
+
 .hero-img-container{
     position: absolute;
     top: 0;
@@ -58,14 +57,15 @@ head{
     width: 100%;
     height: 100%;
 }
+
 .hero-img-container::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
 }
 
 .hero .hero-img-container img {
@@ -84,14 +84,18 @@ head{
     color: var(--textlight);
     justify-content: center;
 }
+
+
 .caption-hero h3{
     font-size: var(--font-size-h3);
     margin-bottom: 5px;
 }
+
 .caption-hero p{
     text-align: justify;
     margin-bottom: 10px;
 }
+
 .caption-hero div button{
     padding-inline: 30px;
     padding-block:10px;
@@ -102,6 +106,7 @@ head{
     font-weight: var(--font-weight-heading);
     transition: background .5s ease-in;
 }
+
 .caption-hero button:hover{
     background: var(--buttton-hover);
 }
@@ -124,16 +129,6 @@ head{
 .wrapp:hover{
     background: var(--secondary-hover);
 }
-.img-card{
-    display: inline-flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-    width: 100%;
-}
-.img-card h5{
-    font-size: var(--font-size-h5);
-}
 .img-card img{
     width: 40px;
     height: 40px;
@@ -149,7 +144,6 @@ head{
     text-align: center;
     font-size: var(--font-size-body4);
 }
-
 .wrapp a{
     padding-block: 5px;
     text-align: center;
@@ -165,47 +159,49 @@ head{
     transition:  background .5s;
     background: var(--buttton-hover);
 }
+.img-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.img-card h5{
+    font-size: var(--font-size-h5);
+}
 
 .about{
     display: flex;
     width: 100%;
+    height: 400px;
     gap: 20px;
 }
-.about .container-about{
-    width: 50%;
-    height: auto;
-}
-.container-about img{
+.content-right-about, .content-left-about{
     width: 100%;
-    height: auto;
-    object-fit: cover;
-}
-.container-about article{
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
     height: 100%;
-    justify-content: center;
 }
-.container-about article p{
-    text-align: justify;
+.content-left-about img{
     width: 100%;
-    font-size: var(--font-size-body2);
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
 }
-.container-about article a{
+.content-right-about{
+    display: flex;
+    align-items: center;
+    text-align: justify;
+}
+.content-right-about p{
+    margin-bottom: 15px;
+}
+.content-right-about a{
+    padding-inline: 20px;
+    padding-block: 5px;
+    background: var(--buttton);
+    color: var(--font-size-body2);
     text-decoration: none;
     color: var(--textlight);
-    padding-block: 5px;
-    width: 120px;
-    text-align: center;
-    background: var(--buttton);
     border-radius: 5px;
 }
-.container-about article a:hover{
-    transition:  background .5s;
-    background: var(--buttton-hover);
-}
-
 
 
 .news{

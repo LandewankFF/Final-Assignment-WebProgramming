@@ -1,6 +1,7 @@
 @media screen and (max-width: 768px){
     .about{
         flex-direction: column;
+        height: auto;
     }
     .about .container-about{
         width: 100%;
@@ -43,9 +44,9 @@
     .book-click{
         gap: 20px;
     }
-    /* Page calendar */
-    .logo-footer{
-        width: 100%;
-        justify-content: center;
+    /* end style Page calendar */
+    .hero .hero-img-container img{
+        object-position: left top;
     }
+ 
 }
